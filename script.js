@@ -1,5 +1,6 @@
 console.log("Welcome to Tic Tac Toe")
 let music = new Audio("gamemusic.mp3")
+music.play();
 let audioTurn = new Audio("buttonhit.mp3")
 let gameover = new Audio("gameover.mp3")
 let turn = "X"
@@ -35,7 +36,6 @@ const checkWin = ()=>{
 }
 
 // Game Logic
-music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.boxtext');
